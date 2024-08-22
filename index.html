@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cartão</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex align-items-center justify-content-center m-0">
+    <div class="card bg-dark px-4 py-3 card-form">
+        <form id="cardForm">
+            <div class="d-flex justify-content-between">
+                <div class="col-sm-6 pl-0">
+                    <div class="form-group">
+                        <label class="text-white" for="cardNumber">Número do cartão</label>
+                        <input type="text" class="form-control border-secondary background-input" id="cardNumberInput"
+                            placeholder="**** **** **** ****" maxlength="19">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-white" for="name">Nome do titular</label>
+                        <input type="text" class="form-control border-secondary background-input" id="nameInput"
+                            placeholder="Nome como está no cartão">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label class="text-white" for="validity">Validade</label>
+                            <input type="text" class="form-control border-secondary background-input" id="validityInput"
+                                placeholder="mm / aa" maxlength="7">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label class="text-white" for="cvv">CVV</label>
+                            <input type="text" class="form-control border-secondary background-input" id="cvvInput"
+                                placeholder="***" maxlength="3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col pr-0">
+                    <div clas="card-front" id="cardFront"
+                        style="background: url('./imagens/card-front.png'); width: 298px; height: 180px; background-size: cover;">
+                        <div class="d-flex justify-content-between px-5 logos">
+                            <div>
+                                <img src="./imagens/logo-visa.png" alt="logo visa" id="logoVisa"
+                                    style="display: inline;">
+                                <img src="./imagens/logo-master.png" alt="logo master" id="logoMaster"
+                                    style="display: inline;">
+                                <img src="./imagens/logo-elo.png" alt="logo elo" id="logoElo" style="display: inline;">
+                            </div>
+                            <div>
+                                <img src="./imagens/wirless-card.png" alt="wirless" id="Wirless">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-white px-5 pb-2" id="cardNumber">**** **** **** ****</div>
+                            <div class="d-flex justify-content-between px-5">
+                                <small class="text-muted" id="cardName">Seu nome aqui</small>
+                                <div class="text-white" id="cardValidity">** / **</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="cardBack"
+                        style="background-image: url('./imagens/card-back.png'); width: 298px; height: 180px; background-size: cover;">
+                    </div>
+                    <div>
+                        <div class="text-white text-center pt-3"><span><img src="./imagens/check.png"
+                                    alt="check"></span> <small>Seus dados estão seguros</small></div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-lg btn-block text-white mt-4 mb-2 addcard" id="addCard">Adicionar
+                Cartão</button>
+        </form>
+        <div id="successMessage" class="text-center text-white mt-3 py-1 d-none bg-success" style="opacity: 90%;">Cartão
+            adicionado com sucesso</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

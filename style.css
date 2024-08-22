@@ -1,0 +1,23 @@
+body {
+    background-color: #111827 !important;
+    height: 100vh;
+}
+
+.card-form {
+    max-width: 630px;
+    border: solid 1px #5e646b;
+    border-radius: 15px;
+}
+
+.background-input {
+    background-color: #111827;
+}
+
+.logos {
+    padding-top: 35px; 
+    padding-bottom: 30px
+}
+
+.addcard {
+    background-color: #9333ea;
+}
