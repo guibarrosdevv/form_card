@@ -33,11 +33,11 @@ Tudo feito com HTML, CSS e JavaScript puro — sem frameworks pesados.
 
 ---
 
-## 📸 Prévia da Experiência
+## 📸 Capturas de tela
 
-| Frente preenchida                                | Verso ao digitar o CVV                        |
+| Frente                                 | Verso                       |
 |--------------------------------------------------|-----------------------------------------------|
-| ![Frente do Cartão](./imagens/demo-frente.gif)   | ![Verso do Cartão](./imagens/demo-verso.gif)  |
+| ![Screenshot Desktop](./imagens/screenshot-desktop.png)   | ![Screenshot Mobile](./imagens/screenshot-mobile.png)  |
 
 ---
 
