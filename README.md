@@ -25,6 +25,13 @@ Tudo feito com HTML, CSS e JavaScript puro — sem frameworks pesados.
 
 ---
 
+## 🌐 Página do Projeto
+
+👉 Acesse o projeto publicado:  
+[https://form-card-ivory.vercel.app/](https://form-card-ivory.vercel.app/)
+
+---
+
 ## 🚀 Funcionalidades
 
 ✔️ Preenchimento dinâmico no cartão  
@@ -42,8 +49,6 @@ Tudo feito com HTML, CSS e JavaScript puro — sem frameworks pesados.
 - `JavaScript`
 - `Bootstrap`
 
-> Sem dependências externas desnecessárias. Foco total em aprendizado, performance e experiência visual.
-
 ---
 
 ## 🎯 Objetivo do Projeto
@@ -52,17 +57,8 @@ Este projeto foi criado com o objetivo de simular, de forma intuitiva e visual, 
 
 ---
 
-## 🧠 Ideal para quem...
+Clone o repositório:
 
-- Está aprendendo front-end e quer ir além dos formulários estáticos.
-- Quer impressionar em projetos de portfólio.
-- Gosta de interfaces vivas e detalhistas.
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT — fique à vontade para estudar, adaptar ou compartilhar.
-
----
-
+```bash
+git https://github.com/guibarrosdevv/form_card.git
+Abra o arquivo index.html no navegador.
