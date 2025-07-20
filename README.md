@@ -5,9 +5,11 @@
   Desenvolvido com foco em detalhes, responsividade e usabilidade.
 </p>
 
-<p align="center">
-  <img src="./imagens/demo-frente.gif" width="400" alt="Demonstração do Cartão">
-</p>
+## 📸 Capturas de tela
+
+| Frente                                 | Verso                       |
+|--------------------------------------------------|-----------------------------------------------|
+| ![Screenshot Desktop](./imagens/screenshot-desktop.png)   | ![Screenshot Mobile](./imagens/screenshot-mobile.png)  |
 
 ---
 
@@ -26,18 +28,10 @@ Tudo feito com HTML, CSS e JavaScript puro — sem frameworks pesados.
 ## 🚀 Funcionalidades
 
 ✔️ Preenchimento dinâmico no cartão  
-✔️ Máscaras automáticas (número, data e CVV)  
+✔️ Máscaras automáticas (número, data e nome)  
 ✔️ Detecção de bandeiras (Visa, Mastercard, Elo)  
-✔️ Animação de virar o cartão ao focar no CVV  
+✔️ Animação de virar o cartão ao digitar o CVV  
 ✔️ Feedback visual ao enviar
-
----
-
-## 📸 Capturas de tela
-
-| Frente                                 | Verso                       |
-|--------------------------------------------------|-----------------------------------------------|
-| ![Screenshot Desktop](./imagens/screenshot-desktop.png)   | ![Screenshot Mobile](./imagens/screenshot-mobile.png)  |
 
 ---
 
