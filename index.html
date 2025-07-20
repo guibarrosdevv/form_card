@@ -13,11 +13,12 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="d-flex align-items-center justify-content-center m-0">
-    <div class="card bg-dark px-4 py-3 card-form">
+<body class="d-flex align-items-center justify-content-center min-vh-100 bg-dark m-0 mx-3">
+    <div class="card bg-dark px-4 py-4 card-form w-100" style="max-width: 900px;">
         <form id="cardForm">
-            <div class="d-flex justify-content-between">
-                <div class="col-sm-6 pl-0">
+            <div class="row">
+                <!-- Lado do formulário -->
+                <div class="col-12 col-md-6">
                     <div class="form-group">
                         <label class="text-white" for="cardNumber">Número do cartão</label>
                         <input type="text" class="form-control border-secondary background-input" id="cardNumberInput"
@@ -28,22 +29,24 @@
                         <input type="text" class="form-control border-secondary background-input" id="nameInput"
                             placeholder="Nome como está no cartão">
                     </div>
-                    <div class="row">
-                        <div class="form-group col-sm-6">
+                    <div class="form-row">
+                        <div class="form-group col-6">
                             <label class="text-white" for="validity">Validade</label>
                             <input type="text" class="form-control border-secondary background-input" id="validityInput"
                                 placeholder="mm / aa" maxlength="7">
                         </div>
-                        <div class="form-group col-sm-6">
+                        <div class="form-group col-6">
                             <label class="text-white" for="cvv">CVV</label>
                             <input type="text" class="form-control border-secondary background-input" id="cvvInput"
                                 placeholder="***" maxlength="3">
                         </div>
                     </div>
                 </div>
-                <div class="col pr-0">
+
+                <!-- Lado do cartão -->
+                <div class="col-12 col-md-6 mt-4 mt-md-0 d-flex flex-column align-items-center">
                     <div clas="card-front" id="cardFront"
-                        style="background: url('./imagens/card-front.png'); width: 298px; height: 180px; background-size: cover;">
+                    style="background: url('./imagens/card-front.png'); width: 298px; height: 180px; background-size: cover;">
                         <div class="d-flex justify-content-between px-5 logos">
                             <div>
                                 <img src="./imagens/logo-visa.png" alt="logo visa" id="logoVisa"
@@ -59,26 +62,32 @@
                         <div>
                             <div class="text-white px-5 pb-2" id="cardNumber">**** **** **** ****</div>
                             <div class="d-flex justify-content-between px-5">
-                                <small class="text-muted" id="cardName">Seu nome aqui</small>
+                                <small class="text-muted" id="cardName">NOME DO TITULAR</small>
                                 <div class="text-white" id="cardValidity">** / **</div>
                             </div>
                         </div>
                     </div>
+
                     <div class="d-none" id="cardBack"
-                        style="background-image: url('./imagens/card-back.png'); width: 298px; height: 180px; background-size: cover;">
+                        style="background-image: url('./imagens/card-back.png'); width: 100%; max-width: 298px; height: 180px; background-size: cover;">
                     </div>
-                    <div>
-                        <div class="text-white text-center pt-3"><span><img src="./imagens/check.png"
-                                    alt="check"></span> <small>Seus dados estão seguros</small></div>
+
+                    <div class="text-white text-center pt-3">
+                        <span><img src="./imagens/check.png" alt="check"></span>
+                        <small>Seus dados estão seguros</small>
                     </div>
                 </div>
             </div>
+
             <button type="button" class="btn btn-lg btn-block text-white mt-4 mb-2 addcard" id="addCard">Adicionar
                 Cartão</button>
         </form>
-        <div id="successMessage" class="text-center text-white mt-3 py-1 d-none bg-success" style="opacity: 90%;">Cartão
-            adicionado com sucesso</div>
+
+        <div id="successMessage" class="text-center text-white mt-3 py-1 d-none bg-success" style="opacity: 90%;">
+            Cartão adicionado com sucesso
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 
